@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --primary: #F91D3E;
+}
+
+
+body{
+    background-color: #123075;
+    overflow-x: hidden;
+}
+
+.Homepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Homepage__bgbox1{
+    position: absolute;
+    left:60vw;
+    top:-15vh;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(26,71,176, 0.2);
+    border-radius: 100px;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+  
+.Homepage__bgbox2{
+    position: absolute;
+    left:11vw;
+    top:40vh;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(26,71,176, 0.2);
+    border-radius: 100px;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.Homepage__titleText{
+    margin-top: 15vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #e5e5e5;
+}
+
+.Homepage__smallText{
+    color: #709BE7;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.Homepage__buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.Homepage__button{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 16px;
+    width: 166px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    color:#1A47B0;
+}
+
+.primary{
+    background-color: var(--primary);
+    color: #e5e5e5;
+}
+
+.Homepage__iphone{
+    margin-left: 6vw;
+}
+
+.Homepage__features{
+    background-color: #F7F8FB;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Homepage__featureTitle{
+    color: #0F358E;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20vh;
+}
+
+.Homepage__cards{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.Homepage__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Homepage__card_elevated{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 20px 30px 50px 10px #ccc;
+    border-radius: 5px;
+    margin-bottom: 150px;
+}
+
+.Homepage__card_title{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: #0F358E;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Homepage__card_description{
+    width: 240px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #595F6F;
+}
+
+.Homepage__terms{
+    background-color: #123075;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Homepage__number{
+    margin-top: 100px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+    color: white;
+}
+
+.Homepage__termsText{
+    color: white;
+    text-align: center;
+    width: 40vw;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.Homepage__footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 80px;
+}
+
+.Homepage__footerCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.Homepage__footerText{
+    font-family: 'Roboto';
+    color:#1A47B0;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.Homepage__footerSmallText{
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #BFC4CE;
+    margin-top: 10px;
+}
