@@ -1,0 +1,86 @@
+.Login{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.Login__header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgba(112,155,231, 0.1);
+    border-bottom: 0.1px rgba(112,155,231, 0.3) solid;
+}
+
+.Login__logo{
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-left: 4vw;
+}
+
+.Login__main{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+.Login__left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login__right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login__bigText{
+    font-family: 'Roboto';
+    font-size: 48px;
+    color: white;
+}
+
+.Login__right_form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login__field{
+    width: 300px;
+    height: 50px;
+    border: 1px solid #9AA5C0;
+    padding: 5px 20px 5px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.Login__forgot_pass{
+    color: #474C5C;
+    text-decoration: none;
+}
+
+.Login__button{
+    background: linear-gradient(100deg, rgba(250,43,86, 1) 0%, rgba(249,28,61, 1) 25%);
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
