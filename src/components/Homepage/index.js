@@ -1,81 +1,119 @@
 import './Homepage.css';
 import React from 'react';
-import iPhoneIcon from '../../assets/images/iPhones.png';
-import DocumentIcon from '../../assets/images/Document.png';
-import StarIcon from '../../assets/images/Star.png';
-import ClockIcon from '../../assets/images/Clock.png';
-import EmailIcon from '../../assets/images/Email Icon.png';
-import PhoneIcon from '../../assets/images/Phone Icon.png';
-import AddressIcon from '../../assets/images/Address Icon.png';
+import iPhoneImage from '../../assets/images/iPhones.png';
+import BrowserImage from '../../assets/images/Browser.png';
+import iPhoneWithImage from '../../assets/images/iPhoneWithImage.png';
+import IdeaIcon from '../../assets/images/Idea.png';
+import VkontakteIcon from '../../assets/images/Vk.png';
+import PinterestIcon from '../../assets/images/Pinterest.png';
+import InstagramIcon from '../../assets/images/Instagram.png';
+import TwitterIcon from '../../assets/images/Twitter.png';
+import FacebookIcon from '../../assets/images/Facebook.png';
+import iPhoneCrop from '../../assets/images/iPhoneCrop.png';
 
 function Homepage() {
     return (
         <div className="Homepage">
-            <div className="Homepage__bgbox1" />
-            <div className="Homepage__bgbox2" />
-            <div className="Homepage__titleText">
-                Focus groups made easy<br/>The easy, fast and free way to run focus groups
-            </div>
-            <div className="Homepage__smallText">
-                Start your free focus group today
-            </div>
-            <div className="Homepage__buttons">
-                <button className="Homepage__button primary">Sign up</button>
-                <button className="Homepage__button">Login</button>
-            </div>
-            <img src={iPhoneIcon} className="Homepage__iphone" alt="iPhones"/>
+            {/* <div className="Homepage__bgbox1" />
+            <div className="Homepage__bgbox2" /> */}
+            <div className="Homepage__top">
+                <div className="Homepage__titleText">
+                    Focus groups made easy<br/>The easy, fast and free way to run focus groups
+                </div>
+                <div className="Homepage__smallText">
+                    Start your free focus group today
+                </div>
+                <div className="Homepage__buttons">
+                    <button className="Homepage__button primary">Sign up</button>
+                    <button className="Homepage__button">Login</button>
+                </div>
+                <img src={iPhoneImage} className="Homepage__iphone" alt="iPhones"/>
+                <img src={BrowserImage} className="Homepage__browser" alt="browser"/>
 
+            </div>
             <div className="Homepage__features">
                 <div className="Homepage__featureTitle">
-                    Great Features
+                    Get your focus group chat now in just 10 minutes
                 </div>
-                <div className="Homepage__cards">
+                <div className="Homepage__steps">
                     <div className="Homepage__card">
-                        <img src={DocumentIcon} alt="Documents"/>
-                        <div className="Homepage__card_title">Great Documentation &<br/>Organized Files</div>
-                        <div className="Homepage__card_description">All layers are well named & grouped, documentation looks pretty cool also.</div>
-                    </div>
-                    <div className="Homepage__card_elevated">
-                        <img src={StarIcon} alt="Star"/>
-                        <div className="Homepage__card_title">Well Designed <br/>Components & Templates</div>
-                        <div className="Homepage__card_description">Hundreds of amazing designed components in 1170px grid.</div>
-                        <button className="Homepage__button primary" style={{marginTop:"20px"}}>Design your Website</button>
+                        <div className="Homepage__number">1</div>
+                        <div className="Homepage__card_title">Create your focus group</div>
+                        <div className="Homepage__card_description">Get your focus group started in 10 minutes (or less) by creating it and make a topic for participants .</div>
                     </div>
                     <div className="Homepage__card">
-                        <img src={ClockIcon} alt="Clock"/>
-                        <div className="Homepage__card_title">Save Hours of Designing <br/>& Developing</div>
-                        <div className="Homepage__card_description">Bunch of components will help you to prototype, design & build much faster.</div>
+                        <div className="Homepage__number">2</div>
+                        <div className="Homepage__card_title">Invite participants to join</div>
+                        <div className="Homepage__card_description">Share your secure group link to your social networks, customer lists and website, or add it to the end of any online survey.</div>
+                    </div>
+                    <div className="Homepage__card">
+                        <div className="Homepage__number">3</div>
+                        <div className="Homepage__card_title">Moderate the discussion</div>
+                        <div className="Homepage__card_description">Participants can respond to you and each other. Run your groups as long as you want .</div>
+                    </div>
+                    <div className="Homepage__card">
+                        <div className="Homepage__number">4</div>
+                        <div className="Homepage__card_title">Invite hosts for help</div>
+                        <div className="Homepage__card_description">Send email to whoever you want to be your chat group host .</div>
                     </div>
                 </div>
-                <div className="Homepage__terms">
-                    <div className="Homepage__number">1</div>
-                    <div className="Homepage__titleText" style={{marginTop: "50px"}}>
-                        You may want to put ur terms or <br/>privacy somewhere
+                <button className="Homepage__button primary" style={{marginBottom: "100px"}}>
+                    Start Now
+                    <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft:"40px"}}width="24" fill="white" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+                </button>
+            </div>
+
+            <div className="Homepage__display">
+                <img src={iPhoneWithImage} className="Homepage__display_left hide_on_mobile" alt="iPhone"/>
+                <div className="Homepage__display_right">
+                    <img src={IdeaIcon} alt="Idea"/>
+                    <div className="Homepage__display_title">
+                        easy, fast way to gather qualitative feedback online.
                     </div>
-                    <div className="Homepage__termsText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
-                        pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
-                        Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
-                        in pretium orci vestibulum eget.
+                    <div className="Homepage__display_description">
+                         In order to make the best decisions possible, organizations should be using both quantitative (surveys) and qualitative (focus group) methods. 
                     </div>
+                    <button className="Homepage__button primary" style={{marginBottom: "100px"}}>
+                        Learn More
+                    </button>
                 </div>
+                <img src={iPhoneCrop} className="show_on_mobile" alt="iPhone Crop"/>
             </div>
 
             <div className="Homepage__footer">
-                <div className="Homepage__footerCard">
-                    <img src={EmailIcon} alt="Email Icon"/>
-                    <div className="Homepage__footerText">hello@email.com</div>
-                    <div className="Homepage__footerSmallText">Email</div>
+                <div className="Homepage__footer_bgbox" />
+                <div className="Homepage__footer_1">
+                    <div className="Homepage__footer_1_title">
+                        Focus Group Chat
+                    </div>
+                    <div className="Homepage__footer_1_bigText">
+                        The easy, fast and free way to run group chat
+                    </div>
+                    <div className="Homepage__footer_1_smallText">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                    </div>
+                    <div className="Homepage__footer_1_socials">
+                        <img src={VkontakteIcon} className="Homepage__social_icon" alt="vkontakte"/>
+                        <img src={PinterestIcon} className="Homepage__social_icon" alt="pinterest"/>
+                        <img src={InstagramIcon} className="Homepage__social_icon" alt="instagram"/>
+                        <img src={TwitterIcon} className="Homepage__social_icon" alt="twitter"/>
+                        <img src={FacebookIcon} className="Homepage__social_icon" alt="facebook"/>
+                    </div>
                 </div>
-                <div className="Homepage__footerCard">
-                    <img src={PhoneIcon} alt="Phone Icon"/>
-                    <div className="Homepage__footerText">+399 399 233 166</div>
-                    <div className="Homepage__footerSmallText">Phone</div>
+                <div className="Homepage__footer_2">
+                    <div className="Homepage__footer_2_bigText">Navigation</div>
+                    <div className="Homepage__navigation_items">
+                        <div className="Homepage__footer_2_smallText">Homepage</div>
+                        <div className="Homepage__footer_2_smallText">About</div>
+                        <div className="Homepage__footer_2_smallText">Terms</div>
+                        <div className="Homepage__footer_2_smallText">Privacy</div>
+                    </div>
                 </div>
-                <div className="Homepage__footerCard">
-                    <img src={AddressIcon} alt="Email Icon"/>
-                    <div className="Homepage__footerText">Main Street 32b, NYC</div>
-                    <div className="Homepage__footerSmallText">Address</div>
+                <div className="Homepage__footer_3">
+                    <div className="Homepage__footer_2_bigText">Get in Touch</div>
+                    <div className="Homepage__footer_2_smallText">todaywebuikit.com</div>
+                    <div className="Homepage__footer_2_smallText">hello@email.com</div>
+                    <div className="Homepage__footer_2_smallText">+377 8832 9903</div>
                 </div>
             </div>
         </div>

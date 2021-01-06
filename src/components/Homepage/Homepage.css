@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
-    --primary: #F91D3E;
+    --primary: #FB1963;
 }
 
 
 body{
     background-color: #123075;
+}
+
+.App{
     overflow-x: hidden;
 }
 
 .Homepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Homepage__top{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,11 +51,12 @@ body{
 }
 
 .Homepage__titleText{
-    margin-top: 15vh;
+    margin-top: 112px;
     font-family: 'Roboto', sans-serif;
-    font-size: 48px;
+    font-size: clamp(4vw, 10px, 38px);
     text-align: center;
     color: #e5e5e5;
+    position: relative;
 }
 
 .Homepage__smallText{
@@ -72,19 +83,38 @@ body{
     border: none;
     outline:none;
     color:#1A47B0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .primary{
     background-color: var(--primary);
-    color: #e5e5e5;
+    color:  white;
 }
 
 .Homepage__iphone{
-    margin-left: 6vw;
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+    z-index: 10;
+    width: 40vw;
+    max-width: 500px;
+    min-width: 300px;
+    object-fit: contain;
+}
+
+.Homepage__browser{
+    position: relative;
+    top:0px;
+    width: 80vw;
+    max-width: 1000px;
+    min-width: 600px;
+    object-fit: contain;
 }
 
 .Homepage__features{
-    background-color: #F7F8FB;
+    background-color: #FBFCFC;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -94,23 +124,27 @@ body{
 
 .Homepage__featureTitle{
     color: #0F358E;
-    font-size: 48px;
+    font-size: clamp(30px, 3vw, 43px);
     font-family: 'Roboto', sans-serif;
     margin-top: 20vh;
+    text-align: center;
 }
 
-.Homepage__cards{
-    margin-top: 8vh;
+.Homepage__steps{
+    margin-top: 2vh;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     width: 70vw;
+    flex-wrap: wrap;
 }
 
 .Homepage__card{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .Homepage__card_elevated{
@@ -130,25 +164,15 @@ body{
     font-weight: 700;
     font-size: 20px;
     color: #0F358E;
-    text-align: center;
     margin-top: 40px;
 }
 
 .Homepage__card_description{
     width: 240px;
-    text-align: center;
     margin-top: 10px;
     font-family: 'Roboto';
     font-size: 16px;
     color: #595F6F;
-}
-
-.Homepage__terms{
-    background-color: #123075;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .Homepage__number{
@@ -165,43 +189,179 @@ body{
     color: white;
 }
 
-.Homepage__termsText{
-    color: white;
-    text-align: center;
-    width: 40vw;
-    margin-top: 30px;
-    margin-bottom: 100px;
+.Homepage__display{
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5vw;
+    align-items: center;
+    z-index: 2;
+}
+
+.Homepage__display_left{
+    width: 50vw;
+    display: flex;
+}
+
+
+.show_on_mobile{
+    display: none;
+}
+
+
+.Homepage__display_right{
+    width: clamp(10px, 80vw, 500px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.Homepage__display_title{
+    color: #1A47B0;
+    font-family: 'Roboto';
+    font-size: clamp(25px, 4vw, 36px);
+    margin-top: 40px;
+}
+
+.Homepage__display_description{
+    color: #595F6F;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .Homepage__footer{
     width: 100vw;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    padding: 80px;
+    background: linear-gradient(100deg, #122F74 0%, #092056 25%);
+    overflow: hidden;
+    position: relative;
+    height: 400px;
 }
 
-.Homepage__footerCard{
+
+.Homepage__footer_1{
+    width: 30vw;
+    margin: 7vw;
+    z-index: 2;
+}
+
+.Homepage__footer_1_title{
+    font-size: clamp(25px, 2vw, 30px);
+    font-weight: 600;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.Homepage__footer_1_bigText{
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+}
+
+.Homepage__footer_1_smallText{
+    color: #709BE7;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.Homepage__footer_1_socials{
+    margin-top: 40px;
+}
+
+.Homepage__social_icon{
+    margin-right: 10px;
+}
+
+.Homepage__footer_2{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
+    margin: 7vw;
 }
 
-.Homepage__footerText{
+.Homepage__footer_2_bigText{
     font-family: 'Roboto';
-    color:#1A47B0;
-    font-size: 18px;
-    margin-top: 50px;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
 }
 
-.Homepage__footerSmallText{
+.Homepage__footer_2_smallText{
+    font-family: 'Roboto';
+    color: #709BE7;
     font-size: 14px;
-    font-family: 'Roboto';
-    color: #BFC4CE;
-    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Homepage__navigation_items{
+    display: flex;
+    flex-direction: column;
+}
+
+.Homepage__footer_3{
+    margin: 7vw;
+}
+
+.Homepage__footer_bgbox{
+    width: 1000px;
+    height: 1000px;
+    border-radius: 100px;
+    z-index: 1;
+    position: absolute;
+    left:-490px;
+    top: -300px;
+    background-color: rgba(26,71,176, 0.2);
+    transform: rotate(45deg);
+    overflow: hidden;
+    border: 0.5px rgba(151,151,151, 0.2) solid;
+}
+
+@media only screen and (max-width: 685px) {
+    .Homepage__footer{
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        padding: 20px;
+        padding-left: 40px;
+    }
+    .Homepage__footer_1{
+        width: 80vw;
+        margin: 10px;
+    }
+    .Homepage__footer_2{
+        width: 80vw;
+        margin: 10px;
+    }
+    .Homepage__footer_3{
+        width: 80vw;
+        margin: 10px;
+    }
+    .Homepage__navigation_items{
+        flex-direction: row;
+    }
+    .Homepage__footer_2_smallText{
+        margin-right: 30px;
+    }
+    .Homepage__steps{
+        justify-content: center;
+    }
+    .Homepage__display{
+        flex-direction: column;
+    }
+    .Homepage__display_left{
+        order: 2;
+    }
+    .show_on_mobile{
+        display: block;
+        width: 95vw;
+        margin-left: 100px;
+    }
+    .hide_on_mobile{
+        display: none;
+    }
 }
