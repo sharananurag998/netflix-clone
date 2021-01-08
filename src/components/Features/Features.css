@@ -1,0 +1,116 @@
+.Features{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Features_1{
+    background-color: #F7F8FB;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Features__featureTitle{
+    color: #0F358E;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20vh;
+}
+
+.Features__cards{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+
+.Features__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Features__card_elevated{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 20px 30px 50px 10px #ccc;
+    border-radius: 5px;
+    margin-bottom: 150px;
+}
+
+.Features__card_title{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: #0F358E;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Features__card_description{
+    width: 240px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #595F6F;
+}
+
+.Features__buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.Features__button{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 16px;
+    width: 166px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    color:#1A47B0;
+}
+
+.Features_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F7F8FB;
+}
+
+.Features_3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F7F8FB;
+    padding-bottom: 200px;
+}
+
+.Features_steps{
+    flex-direction: column;
+}
+
+.Features_3__left{
+    margin: 1vw;
+    margin-left: 15vw;
+    margin-right: 10vw;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+.Features_3__right{
+    margin-right: -100px;
+}

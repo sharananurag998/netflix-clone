@@ -20,7 +20,9 @@ function Header() {
                 <ul class="menu"        >
                     <li><a href="#a">Home</a></li>
                     <li><a href="#b">Features</a></li>
-                    <li><a href="#c">How&nbsp;it&nbsp;works</a></li>
+                    <li><a href="#c">About</a></li>
+                    <li><a href="#c">Privacy</a></li>
+                    <li><a href="#c">Terms</a></li>
                     <li><a href="#d">Get&nbsp;in&nbsp;touch</a></li>
                 </ul>
 
