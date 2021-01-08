@@ -70,6 +70,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 .Homepage__button{
@@ -173,6 +174,7 @@ body{
     font-family: 'Roboto';
     font-size: 16px;
     color: #595F6F;
+    height: 100px;
 }
 
 .Homepage__number{

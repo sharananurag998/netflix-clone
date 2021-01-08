@@ -5,11 +5,10 @@ import {Link} from "react-router-dom";
 function Login() {
     return (
         <div className="Login">
-            <div className="Login__header">
-                <div className="Login__logo">Focus Group Chat</div>
-                
-            </div>
-            <div className="Login__main">
+            <div className="Homepage__bgbox1 hide_on_mobile" />
+            {/* <div className="Homepage__bgbox2 hide_on_mobile" /> */}
+
+            <div className="Login__main" style={{marginBottom: "200px", marginTop: "100px"}}>
                 <div className="Login__left">
                     <div className="Login__bigText">Sign-In</div>
                 </div>

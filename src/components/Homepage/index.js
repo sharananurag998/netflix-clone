@@ -5,12 +5,13 @@ import BrowserImage from '../../assets/images/Browser.png';
 import iPhoneWithImage from '../../assets/images/iPhoneWithImage.png';
 import IdeaIcon from '../../assets/images/Idea.png';
 import iPhoneCrop from '../../assets/images/iPhoneCrop.png';
+import {Link} from "react-router-dom";
 
 function Homepage() {
     return (
         <div className="Homepage">
-            {/* <div className="Homepage__bgbox1" />
-            <div className="Homepage__bgbox2" /> */}
+            <div className="Homepage__bgbox1 hide_on_mobile" />
+            <div className="Homepage__bgbox2 hide_on_mobile" />
             <div className="Homepage__top">
                 <div className="Homepage__titleText">
                     Focus groups made easy<br/>The easy, fast and free way to run focus groups
@@ -19,8 +20,8 @@ function Homepage() {
                     Start your free focus group today
                 </div>
                 <div className="Homepage__buttons">
-                    <button className="Homepage__button primary">Sign up</button>
-                    <button className="Homepage__button">Login</button>
+                    <Link to="/signup" style={{textDecoration: "none"}}><button className="Homepage__button primary">Sign up</button></Link>
+                    <Link to="/login" style={{textDecoration: "none"}}><button className="Homepage__button">Login</button></Link>
                 </div>
                 <img src={iPhoneImage} className="Homepage__iphone" alt="iPhones"/>
                 <img src={BrowserImage} className="Homepage__browser" alt="browser"/>

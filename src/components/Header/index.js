@@ -1,16 +1,19 @@
 import './Header.css';
 import React from 'react'
 import UserIcon from '../../assets/images/User.png';
+import {Link} from 'react-router-dom';
 
 function Header() {
     return (
         <div className="Header">
-            <div className="logo">
-                Focus&nbsp;Group&nbsp;Chat
-            </div>
+            <Link to="/" style={{textDecoration:"none"}}>
+                <div className="logo">
+                    Focus&nbsp;Group&nbsp;Chat
+                </div>
+            </Link>
             <div className="Header__right">
-                <div className="Header__link active">Home</div>
-                <div className="Header__link">Features</div>
+                <Link to="/" style={{textDecoration:"none"}}><div className="Header__link">Home</div></Link>
+                <Link to="/features" style={{textDecoration:"none"}}><div className="Header__link">Features</div></Link>
                 <div className="Header__link">How&nbsp;it&nbsp;works</div>
                 <div className="Header__link">Get&nbsp;in&nbsp;touch</div>
                 <div className="Header__icon">

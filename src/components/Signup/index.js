@@ -6,11 +6,9 @@ import {Link} from "react-router-dom";
 function Signup() {
     return (
         <div className="Signup">
-            <div className="Signup__header">
-                <div className="Signup__logo">Focus Group Chat</div>
-                
-            </div>
-            <div className="Signup__main">
+            <div className="Homepage__bgbox1 hide_on_mobile" />
+            <div className="Homepage__bgbox2 hide_on_mobile" />
+            <div className="Signup__main" style={{marginBottom: "200px", marginTop: "100px"}}>
                 <div className="Signup__left">
                     <div className="Signup__bigText">Sign-Up</div>
                     <div className="Signup__smallText">Already signed up?  <Link className="Signup__left_link" to="/login">Login Here</Link></div>
